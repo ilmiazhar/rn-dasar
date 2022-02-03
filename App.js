@@ -1,12 +1,19 @@
-import { StatusBar } from "expo-status-bar";
-import { Button, StyleSheet, Text, TextInput, View } from "react-native";
+import { Button, StyleSheet, TextInput, View } from "react-native";
 
 export default function App() {
   return (
-    <View>
-      <View>
-        <TextInput></TextInput>
-        <Button title="ADD"></Button>
+    <View style={{ padding: 50 }}>
+      <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center"}}>
+        <TextInput
+          placeholder="Enter your goal..."
+          style={{
+            borderColor: "black",
+            borderWidth: 1,
+            padding: 10,
+            width: "80%"
+          }}
+        ></TextInput>
+        <Button title="ADD" style={{ padding: 10 }}></Button>
       </View>
       <View></View>
     </View>
